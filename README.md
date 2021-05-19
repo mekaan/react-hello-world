@@ -7,5 +7,16 @@ Then I start again, create a repo from ECR, create a cluster from ECS, add a con
 Problem: I’m having problems with Docker, "You have reached your pull rate limit.":
     Solved by itself, "by time"
 Problem: Codepipeline deploy, "The AWS ECS container "x"" does not exist"
+    Sad, simple, human error... (Killed hours)
 
+Cons:
+    Not "infrastructer as code"
+    Used root account
+    Slow pipeline(?)
 
+Pros:
+    Fun road
+    Works
+    Clean Job
+
+Love to do this with CDK in another time, just don't have time for now.
