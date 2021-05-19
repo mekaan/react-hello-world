@@ -5,7 +5,7 @@ This was my first experience in implementing containerization and I have a short
 Then I start again, create a repo from ECR, create a cluster from ECS, add a container to it, then create a load balancer, add it to the cluster too, then configure CodeBuild, with that CodeBuild I use CodePipeline. While building the pipeline I had some problems with VPC because of my previous attempts, with some version incompatibilities.
 
 Problem: I’m having problems with Docker, "You have reached your pull rate limit.":
-    Solved by itself, "by time"
+    Solved by itself, "by time"(still problem in succesive builds, solution: dockerhub login)
 Problem: Codepipeline deploy, "The AWS ECS container "x"" does not exist"
     Sad, simple, human error... (Killed hours)
 
@@ -13,10 +13,10 @@ Cons:
     Not "infrastructer as code"
     Used root account
     Slow pipeline(?)
+    repo URI on github repo
 
 Pros:
     Fun road
     Works
-    Clean Job
 
 Love to do this with CDK in another time, just don't have time for now.
