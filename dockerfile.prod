@@ -3,6 +3,7 @@ FROM node:14.15.4 as build
 WORKDIR /my-react-app
 ENV PATH /my-react-app/node_modules/.bin:$PATH
 COPY ./package.json /my-react-app/
+COPY ./package-lock.json /my-react-app/
 RUN yarn --silent
 COPY . /my-react-app
 RUN yarn build
